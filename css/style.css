@@ -138,8 +138,30 @@ ul{
 /* .................................
 11. =circular img
 .................................*/
-
-
+.circular-img{
+    max-width: 360px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.circular-img-inner{
+    text-align: center;
+    border-radius: 0 0 180px 180px;
+    overflow: hidden;
+}
+.circular-img-circle{
+    height: 360px;
+    width: 360px;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+.circular-img img{
+    position: relative;
+    z-index: 1;
+}
 /* .................................
 12. =forms 
 .................................*/
@@ -259,7 +281,9 @@ ul{
     padding: 80px 0;
     min-height: 680px;
 }
-
+.banner-section .circular-img-circle{
+    background-color: var(--red-light);
+}
 /* .................................
 22. =fun facts section 
 .................................*/
