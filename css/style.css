@@ -39,13 +39,28 @@
 /* .................................
 01. =google fonts
 ................................. */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
 /* .................................
 02. = variables 
 .................................*/
+:root{
+    --orange: hsl(36, 80%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --WHITE: hsl(0, 0%, 100%);
+    --BLACK: hsl(0, 0%, 0%);
+    --black-90: hsl(0, 0%, 10%);
+    --black-70: hsl (0, 0%, 30%);
+    --black-alpha-40: hsla(0, 0%, 0%, 0.4);
+    --yellow-light: hsl(44, 95%, 83%);
+    --green-light: hsl(158,68%, 75%);
+    --red-light: hsl(0, 84%, 80%);
+    --orange-light: hsl(22, 85%, 80%);
+    --select-box-bg-color: hsl(0, 0%, 100%);
+    --border-color-1: hsl(0, 0%, 90%);
 
+}
 
 /* .................................
 03. =overrides variables for - theme dark
@@ -55,8 +70,34 @@
 /*.................................
  04.=base
  ................................. */
-
-
+body{
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-70);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--main-color);
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+::selection{
+    color: var(--WHITE);
+    background-color: var(--main-color);
+}
 /*.................................
  05. =box
  ................................. */
@@ -129,7 +170,11 @@
 /* .................................
 19. =header 
 .................................*/
-
+.header-backdrop,
+.header-close-btn,
+.header-hamburger-btn{
+    display: none;
+}
 
 /* .................................
 20. =footer 
