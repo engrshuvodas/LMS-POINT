@@ -170,6 +170,30 @@ ul{
 /* .................................
 19. =header 
 .................................*/
+.header{
+    border-bottom: 1px solid var(--border-color-2);
+}
+.header-logo a{
+   font-size: 26px;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: var(--black-70); 
+}
+.header-logo span{
+    color: var(--main-color);
+}
+.header .menu-item{
+    display: inline-block;
+    margin-left: 40px;
+}
+.header .menu-item > a{
+    display: block;
+    padding: 24px 0;
+    font-weight: 400;
+    color: var(--black-90);
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
 .header-backdrop,
 .header-close-btn,
 .header-hamburger-btn{
