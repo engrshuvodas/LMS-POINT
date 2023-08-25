@@ -106,7 +106,14 @@ ul{
 /* .................................
 06. =customaized bootstarp classes
 ................................. */
+.container{
+    --bs-gutter-x: 15px;
+    max-width: 1140px;
+}
+.row{
+    --bs-gutter-x: 30px;
 
+}
 
 /*.................................
  07. =animaton keyframes
@@ -248,7 +255,10 @@ ul{
 /* .................................
 21. =banner section 
 .................................*/
-
+.banner-section{
+    padding: 80px 0;
+    min-height: 680px;
+}
 
 /* .................................
 22. =fun facts section 
