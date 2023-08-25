@@ -185,6 +185,7 @@ ul{
 .header .menu-item{
     display: inline-block;
     margin-left: 40px;
+    position: relative;
 }
 .header .menu-item > a{
     display: block;
@@ -193,6 +194,45 @@ ul{
     color: var(--black-90);
     text-transform: capitalize;
     transition: color 0.3s ease;
+}
+.header .sub-menu-item a:hover,
+.header .menu-item:hover > a{
+    color: var(--main-color);
+}
+.header .menu-item > a i{
+    font-size: 13px;
+    margin-left: 3px;
+    pointer-events: none;
+}
+.header .sub-menu{
+    position: absolute;
+    top: 100%;
+    background-color: var(--white);
+    left: 0;
+    width: 210px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+}
+@media(min-width: 992px){
+    .header .menu-item:hover > .sub-menu{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.header .sub-menu-item a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--black-90);
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: color 0.3 ease;
 }
 .header-backdrop,
 .header-close-btn,
@@ -238,3 +278,5 @@ ul{
 /* .................................
 27. =contact section 
 .................................*/
+
+
