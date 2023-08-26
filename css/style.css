@@ -335,6 +335,18 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     text-transform: uppercase;
 }
+.fun-facts-item .style-1{
+    color: var(--black-70);
+}
+.fun-facts-item .style-2{
+    color: var(--green-light);
+}
+.fun-facts-item .style-3{
+    color: var(--red-light);
+}
+.fun-facts-item .style-4{
+    color: var(--orange-light);
+}
 
 /* .................................
 23. =courses section
