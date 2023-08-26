@@ -133,8 +133,22 @@ h1,h2,h3,h4,h5,h6{
 /*.................................
  08. =section - padding , titile
  ................................. */
-
-
+.section-padding{
+    padding: 60px 0;
+}
+.section-title{
+    margin-bottom: 40px;
+}
+.section-title .title{
+    font-size: 20px;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.section-title .sub-title{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--black-90);
+}
 /*.................................
  09. =buttons
  .................................*/
