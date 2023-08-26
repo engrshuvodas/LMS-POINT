@@ -322,7 +322,19 @@ h1,h2,h3,h4,h5,h6{
 /* .................................
 22. =fun facts section 
 .................................*/
+.fun-facts-item{
+    padding: 15px 0;
+}
+.fun-facts-item h2{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
 
+}
+.fun-facts-item p{
+    margin: 0;
+    text-transform: uppercase;
+}
 
 /* .................................
 23. =courses section
