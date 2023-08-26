@@ -402,8 +402,22 @@ h3{
 .courses-item .rating{
     font-size: 14px;
 }
+.courses-item .average-rating{
+    font-weight: 600;
+    color: var(--orange);
+}
+.courses-item .average-stars i{
+    color: var(--orange);
+}
 .courses-item .price{
-    
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: var(--main-color);
+    color: var(--WHITE);
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 
 /*.................................
