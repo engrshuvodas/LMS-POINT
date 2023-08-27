@@ -7,10 +7,12 @@
 function testimonialSlider(){
     const CarouselOne = document.getElementById('CarouselOne');
     if(CarouselOne){ 
-        myCarousel.addEventListener('slide.bs.carousel', function() {
+        CarouselOne.addEventListener('slid.bs.carousel', function() {
             const activeItem = this.querySelector(".active");
-            console.log(activeItem);
+            document.querySelector(".js-testimonial-img").src =
+            activeItem.getAttribute("data-js-testimonial-img");
           })
     }
 }
 testimonialSlider();
+
