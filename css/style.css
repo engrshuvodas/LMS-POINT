@@ -132,7 +132,15 @@ h3{
 /*.................................
  07. =animaton keyframes
  ................................. */
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 
+}
 
 /*.................................
  08. =section - padding , titile
@@ -423,7 +431,35 @@ h3{
 /*.................................
  24. =testimonials section
  ................................. */
+.testimonials-section .img-box{
+    height: 150px;
+    width: 150px;
+    background-color: var(--red-light);
+    margin: 30px auto 50px;
+}
+.testimonials-section .img-box::before,
+.testimonials-section .img-box::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--red-light);
+    animation: spin 15s linear infinite;
+}
+.testimonials-section .img-box::before{
+    height: 180px;
+    width: 180px;
+    left: -15px;
+    top: -15px;
+    border-left: 1px solid transparent;
+}
+.testimonials-section .img-box::after{
+    height: 210px;
+    width: 210px;
+    left: -30px;
+    top: -30px;
+    border-right: 1px solid transparent;
 
+}
 
 /*.................................
  25. =bai section
