@@ -460,6 +460,25 @@ h3{
     border-right: 1px solid transparent;
 
 }
+.testimonials-item h3{
+    text-transform: capitalize;
+}
+.testimonials-item .text-2{
+    margin: 0;
+    text-transform: capitalize;
+    
+}
+
+.testimonials-section .carousel-control-prev,
+.testimonials-section .carousel-control-next{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: var(--main-color);
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+}
 
 /*.................................
  25. =bai section
