@@ -330,8 +330,25 @@ h3{
 .footer-item{
     margin: 0 0 30px;
 }
-
-
+.footer-item h3{
+    text-transform: capitalize;
+    margin: 0 0 20px;
+}
+.footer-item .footer-logo{
+    color: var(--black-70);
+    text-transform: uppercase;
+}
+.footer-item .footer-logo span{
+    color: var(--main-color);
+}
+.footer-item ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+.footer-item ul a{
+    text-transform: capitalize;
+    color: var(--black-70);
+    transition: color 0.3s ease;
+}
 /* .................................
 21. =banner section 
 .................................*/
