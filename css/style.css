@@ -369,6 +369,12 @@ h3{
 .footer-item ul a .social-icon{
     margin-right: 5px;
 }
+.footer-bottom{
+    border-top: 1px solid var(--border-color-2);
+}
+.footer-bottom p{
+    font-size: 14px;
+}
 /* .................................
 21. =banner section 
 .................................*/
