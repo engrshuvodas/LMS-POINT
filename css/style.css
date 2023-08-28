@@ -348,6 +348,26 @@ h3{
     text-transform: capitalize;
     color: var(--black-70);
     transition: color 0.3s ease;
+    position: relative;
+}
+.footer-item ul a:hover{
+    color: var(--main-color);
+}
+.footer-item ul a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--main-color);
+    transition: width 0.3s ease;
+}
+.footer-item ul a:hover::before{
+    width: 100%;
+}
+.footer-item ul a .social-icon{
+    margin-right: 5px;
 }
 /* .................................
 21. =banner section 
