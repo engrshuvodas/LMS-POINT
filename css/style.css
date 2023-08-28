@@ -510,7 +510,34 @@ h3{
     top: 50%;
     height: 20px;
     width: 20px;
-    background-color: var(--red-light);}
+    background-color: var(--red-light);
+}
+.testimonials-section .decoration-imgs-item{
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+.testimonials-section .decoration-imgs-item:nth-child(1){
+    height: 60px;
+    width: 60px;
+    left: 20%;
+    top: 30%;
+    background-color: var(--yellow-light);
+}
+.testimonials-section .decoration-imgs-item:nth-child(2){
+    height: 80px;
+    width: 80px;
+    left: 90%;
+    top: 40%;
+    background-color: var(--yellow-light);
+}
+.testimonials-section .decoration-imgs-item:nth-child(3){
+    height: 40px;
+    width: 40px;
+    left: 10%;
+    top: 60%;
+    background-color: var(--green-light);
+}
 /*.................................
  25. =bai section
  ................................. */
