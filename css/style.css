@@ -323,6 +323,13 @@ h3{
 /* .................................
 20. =footer 
 .................................*/
+.footer-top{
+    padding: 50px 0 20px;
+    border-top: 1px solid var(--border-color-2);
+}
+.footer-item{
+    margin: 0 0 30px;
+}
 
 
 /* .................................
@@ -541,7 +548,9 @@ h3{
 /*.................................
  25. =bai section
  ................................. */
-
+.bai-section .circular-img-circle{
+    background-color: var(--yellow-light);
+}
 
 /* .................................
 26. =course details section
