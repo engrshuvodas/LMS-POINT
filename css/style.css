@@ -230,7 +230,17 @@ h3{
 /*.................................
  15. =breadcrumb 
  .................................*/
-
+.breadcrumb-nav{
+    padding: 10px 0;
+}
+.breadcrumb-nav .breadcrumb-item{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+    .breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before,
+    .breadcrumb-nav .breadcrumb-item.active{
+        color: var(--black-70);
+    }
 
 /*.................................
  16. =tabs 
