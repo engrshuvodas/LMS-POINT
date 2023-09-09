@@ -245,7 +245,24 @@ h3{
 /*.................................
  16. =tabs 
  .................................*/
-
+.nav-tabs .nav-link{
+    background-color: var(--white);
+    text-transform: capitalize;
+    border-color: var(--border-color-2);
+    padding: 5px 12px;
+    margin: 0 5px 10px;
+    border-radius: 5px;
+    color: var(--black-70);
+    font-size: 16px;
+}
+.nav-tabs .nav-link:hover{
+    border-color: var(--border-color-2);
+}
+.nav-tabs .nav-link.active{
+    background-color: var(--main-color);
+    border-color: transparent;
+    color: var(--WHITE);
+}
 
 /* .................................
 17. =bubble animation 
