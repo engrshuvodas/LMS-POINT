@@ -640,6 +640,31 @@ h3{
 26. =course details section
 ................................. */
 
+/* course header */
+.course-header h2{
+    font-size: 30px;
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+.course-header .average-rating{
+    font-weight: 600;
+    color: var(--orange);
+}
+.course-header .average-stars i{
+    font-size: 14px;
+    color: var(--orange);
+}
+.course-header .rating span{
+    vertical-align: middle;
+}
+.course-header ul li{
+    margin: 6px 0 0;
+    text-transform: capitalize;
+}
+.course-header ul li span{
+    margin-left: 5px;
+}
+
 
 /* .................................
 27. =contact section 
