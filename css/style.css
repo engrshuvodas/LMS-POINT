@@ -673,6 +673,76 @@ h3{
     margin: 0 10px 10px 0;
 }
 
+/* course curriculum */
+.course-curriculum .accordion-item{
+    border-color: var(--border-color-1);
+    background-color: transparent;
+}
+.course-curriculum .accordion-button span{
+    position: absolute;
+    right: 17px;
+    font-size: 14px;
+}
+.course-curriculum .accordion-button::after{
+    content: "\f077";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    background-image: none;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    line-height: 1;
+}
+.course-curriculum .accordion-button{
+    background-color: transparent;
+    color: var(--black-90);
+    font-weight: 300;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 160px;
+    line-height: 1.5;
+}
+.course-curriculum .accordion-button:focus{
+    box-shadow: none;
+}
+.course-curriculum .accordion-button:not(.collapsed) span{
+    font-weight: 500;
+}
+.course-curriculum .accordion-button:not(.collapsed)::after{
+    transform: translateY(-50%) rotate(-180deg);
+}
+.course-curriculum .accordion-button:not(.collapsed){
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color-1);
+    transition: none;
+    box-shadow: none;
+}
+.course-curriculum ul li{
+    position: relative;
+    padding: 0 50px 0 20px;
+}
+.course-curriculum ul li span{
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    top: 0;
+}
+.course-curriculum ul li i{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--black-70);
+    font-size: 12px;
+}
+
+/* course description */
+.course-description h4{
+    font-size: 16px;
+    
+}
 
 /* .................................
 27. =contact section 
