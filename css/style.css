@@ -226,6 +226,20 @@ h3{
 /* .................................
 14. =pagination
 ................................. */
+.page-item.disabled .page-link,
+.page-link{
+    border: none;
+    background-color: transparent;
+    color: var(--black-70);
+}
+.page-item.active .page-link{
+    background-color: var(--main-color);
+}
+.page-link:hover{
+    background-color: var(--main-color);
+    color: var(--WHITE);
+}
+
 
 /*.................................
  15. =breadcrumb 
