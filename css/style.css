@@ -741,9 +741,29 @@ h3{
 /* course description */
 .course-description h4{
     font-size: 16px;
-    
 }
 
+
+/* course instructor */
+.course-instructor .img-box img{
+    max-width: 128px;
+    margin-bottom: 15px;
+}
+.course-instructor h4{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.course-instructor h4 span{
+    font-weight: 300;
+}
+.course-instructor ul li i{
+    color: var(--main-color);
+    margin-right: 5px;
+}
+.course-instructor ul li:not(:last-child){
+    margin-bottom: 5px;
+}
 /* .................................
 27. =contact section 
 .................................*/
