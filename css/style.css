@@ -764,6 +764,16 @@ h3{
 .course-instructor ul li:not(:last-child){
     margin-bottom: 5px;
 }
+
+
+/* course reviews */
+.rating-summary .average-rating{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black-90);
+}
+
+
 /* .................................
 27. =contact section 
 .................................*/
