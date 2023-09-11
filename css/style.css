@@ -46,7 +46,7 @@
 02. = variables 
 .................................*/
 :root{
-    --orange: hsl(36, 80%, 50%);
+    --orange: hsl(36, 89%, 54%);
     --white: hsl(0, 0%, 100%);
     --WHITE: hsl(0, 0%, 100%);
     --BLACK: hsl(0, 0%, 0%);
@@ -794,6 +794,13 @@ h3{
     min-width: 60px;
     color: var(--orange);
 }
+
+.reviews-filter{
+    margin: 0 0 35px;
+    width: 200px;
+
+}
+
 .reviews-item{
     position: relative;
     margin-bottom: 30px;
@@ -807,6 +814,7 @@ h3{
     left: 0;
     top: 0;
 }
+
 .reviews-item h4{
     font-size: 16px;
     font-weight: 500;
