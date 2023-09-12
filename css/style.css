@@ -180,7 +180,9 @@ h3{
 .btn-theme:focus{
     box-shadow: 0 0 8px var(--main-color);
 }
-
+.btn-block{
+    width: 100%;
+}
 /* .................................
 10. =pages loader
 ................................. */
@@ -908,6 +910,24 @@ select.form-control:focus option{
 }
 .course-sidebar .price-discount{
     color: var(--main-color);
+}
+.course-sidebar .features-list{
+    margin: 0 0 20px;
+}
+.course-sidebar .features-list li{
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 8px;
+}
+.course-sidebar .features-list li::before{
+    content: '';
+    height: 6px;
+    width: 6px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 9px;
+    border-radius: 50%;
 }
 
 /* .................................

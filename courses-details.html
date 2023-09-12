@@ -457,26 +457,29 @@
           <div class="col-lg-4">
             <!-- course sidebar start -->
             <div class="course-sidebar box">
-              <div class="img-box position-relative">
+              <div class="img-box position-relative" data-bs-toggle="modal" data-bs-target="#video-modal">
                 <img src="./img/courses/web-development/3.jpg" class="w-100" alt="course img">
                 <div class="play-icon">
                   <i class="fas fa-play"></i>
                 </div>
                 <p class="text-center">Course Priviews</p>
               </div>
-              <div class="price">
+              <div class="price d-flex align-items-center mb-3">
                 <span class="price-old">$100</span>
                 <span class="price-new">$49</span>
                 <span class="price-discount">$51 off</span>
               </div>
               <h3 class="mb-3">Course Features</h3>
-              <ul>
+              <ul class="features-list">
                 <li>Total 15 Less</li>
                 <li> Other Feature</li>
                 <li>Other Feature</li>
                 <li>Other Feature</li>
                 <li>Other Feature</li>
               </ul> 
+              <div class="btn-wrap">
+                <button type="button" class="btn btn-theme btn-block"> Enroll now</button>
+              </div>
             </div>
             <!-- course sidebar end -->
           </div>
@@ -552,6 +555,23 @@
 
 </div>
     <!--main warpper end-->
+
+    <!-- course preview modal start -->
+    <div class="modal fade video-modal js-course-preview-modal" id="video-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="ratio ratio-16x9">
+              <video controls class="js-course-preview-video">
+                <source src="video/course-preview.mp4"> type="video/mp4"
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course preview modal end -->
 
 <script src="js/bootstrap.bundle.min.js"></script>  
 <script src="js/main.js"></script>
