@@ -860,6 +860,56 @@ select.form-control:focus option{
     margin: 5px 0 0;
 }
 
+/* course sidebar  */
+.course-sidebar{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.course-sidebar .img-box::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black-alpha-40);
+}
+.course-sidebar .play-icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-color);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--WHITE);
+}
+.course-sidebar .img-box p{
+    position: absolute;
+    color: var(--WHITE);
+    top: calc(50% + 40px);
+    font-weight: 500;
+    width: 100%;
+}
+.course-sidebar .price span{
+    margin-right: 8px;
+}
+.course-sidebar .price-new{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black-90);
+}
+.course-sidebar .price-discount{
+    color: var(--main-color);
+}
+
 /* .................................
 27. =contact section 
 .................................*/
