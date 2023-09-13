@@ -257,6 +257,10 @@ h3{
 select.form-control:focus option{
     background-color: var(--select-box-bg-color);
 }
+textarea.form-control{
+    height: 120px;
+    resize: none;
+}
 /* .................................
 13. =video modal 
 .................................*/
