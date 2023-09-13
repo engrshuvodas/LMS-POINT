@@ -249,7 +249,6 @@ select.form-control:focus option{
 13. =video modal 
 .................................*/
 .video-modal .btn-close{
-    background-color: red;
     height: 35px;
     width: 35px;
     background-image: none;
@@ -262,6 +261,9 @@ select.form-control:focus option{
     color: var(--WHITE);
     font-size: 16px;
     padding: 0;
+}
+.video-modal .modal-content{
+    border: 0;
 }
 
 /* .................................
