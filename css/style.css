@@ -356,6 +356,26 @@ textarea.form-control{
     padding: 30px;
     box-shadow: var(--shadow);
 }
+.style-switcher-toggler{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 28%;
+    left: -40px;
+    background-color: var(--main-color);
+    color: var(--WHITE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+}
+.style-switcher h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--border-color-1);
+    padding: 0 0 10px;
+}
 
 /* .................................
 19. =header 

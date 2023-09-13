@@ -429,8 +429,33 @@
 <!--main warpper end-->
 
 <!-- style switcher start -->
-<div class="style-switcher">
-  
+<div class="style-switcher js-style-switcher">
+  <div class="style-switcher-toggler js-style-switcher-toggler">
+    <i class="fas fa-cog"></i>
+  </div>
+  <h3>Style Switcher</h3>
+  <div class="style-switcher-item">
+    <!-- theme colors  -->
+    <div class="theme-colors">
+      <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+      <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+      <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+      <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+      <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+    </div>
+  </div>
+  <div class="style-switcher-item">
+    <div class="form-check form-switch">
+      <input class="form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+      <label class="form-check-label" for="dark-mode">Dark Mode</label>
+    </div>
+  </div>
+  <div class="style-switcher-item">
+    <div class="form-check form-switch">
+      <input class="form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+      <label class="form-check-label" for="glass-effect">Glass Effect</label>
+    </div>
+  </div>
 </div>
 <!-- style switcher end -->
 
