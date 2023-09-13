@@ -962,4 +962,22 @@ select.form-control:focus option{
 27. =contact section 
 .................................*/
 
+.contact-item{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 40px;
+}
+.contact-item .icon-box{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    color: var(--WHITE);
 
+}
