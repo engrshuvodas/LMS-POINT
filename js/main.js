@@ -34,3 +34,18 @@ function coursePreviewVideo(){
     }
 }
 coursePreviewVideo();
+
+/*--------------------------------------------
+    style switcher
+-------------------------------------------- */
+function styleSwitcherToggle(){
+    const styleSwitcher = document.querySelector(".js-style-switcher"),
+    styleSwitcherToggler = document.querySelector(".js-style-switcher-toggler");
+
+    styleSwitcherToggler.addEventListener("click", function(){
+        styleSwitcher.classList.toggle("open");
+        this.querySelector("i").classList.toggle("fa-times")
+        this.querySelector("i").classList.toggle("fa-cog")
+    });
+}
+styleSwitcherToggle();
