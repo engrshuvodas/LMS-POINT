@@ -44,8 +44,8 @@ function styleSwitcherToggle(){
 
     styleSwitcherToggler.addEventListener("click", function(){
         styleSwitcher.classList.toggle("open");
-        this.querySelector("i").classList.toggle("fa-times")
-        this.querySelector("i").classList.toggle("fa-cog")
+        this.querySelector("i").classList.toggle("fa-times");
+        this.querySelector("i").classList.toggle("fa-cog");
     });
 }
 styleSwitcherToggle();
