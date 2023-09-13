@@ -376,7 +376,32 @@ textarea.form-control{
     border-bottom: 1px solid var(--border-color-1);
     padding: 0 0 10px;
 }
-
+.style-switcher-item{
+    padding: 10px 0;
+}
+.theme-colors button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.theme-colors .color-1{
+    background-color: hsl(0, 74%, 61%);
+}
+.theme-colors .color-2{
+    background-color: hsl(230, 74%, 61%);
+}
+.theme-colors .color-3{
+    background-color: hsl(36, 74%, 61%);
+}
+.theme-colors .color-4{
+    background-color: hsl(277, 74%, 61%);
+}
+.theme-colors .color-5{
+    background-color: hsl(164, 74%, 61%);
+}
 /* .................................
 19. =header 
 .................................*/
