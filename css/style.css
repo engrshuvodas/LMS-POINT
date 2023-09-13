@@ -183,6 +183,10 @@ h3{
 .btn-block{
     width: 100%;
 }
+.btn-form{
+    height: 48px;
+
+}
 /* .................................
 10. =pages loader
 ................................. */
@@ -218,13 +222,21 @@ h3{
 /* .................................
 12. =forms 
 .................................*/
+.form-title{
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-weight: 600;
+}
+.form-control::placeholder{
+    color: var(--black-70);
+}
 .form-group{
     margin-bottom: 25px;
     position: relative;
 }
 .form-control{
     height: 48px;
-    border-color: var(--border-color-2);
+    border-color: var(--border-color-1);
     color: var(--black-90);
     background-color: transparent;
 }
