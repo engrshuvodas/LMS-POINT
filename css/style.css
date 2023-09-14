@@ -405,8 +405,11 @@ textarea.form-control{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
 
-
+}
+.theme-colors button.active::before{
+    opacity: 1;
 }
 .theme-colors .color-1{
     background-color: hsl(0, 74%, 61%);
