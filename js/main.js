@@ -89,3 +89,37 @@ function themeColors(){
     }
 }
 themeColors();
+
+
+
+/*------theme light & dark mode-------*/
+
+function themelightDark() {
+    const darkModeCheckbox = document.querySelector(".js-dark-mode");
+
+    darkModeCheckbox.addEventListener("click", function () {
+        if (this.checked) { 
+            localStorage.setItem("theme-dark", "true");
+        } else {
+            localStorage.setItem("theme-dark", "false");
+        }
+        themeMode();
+    });
+
+    function themeMode() {
+        if (localStorage.getItem("theme-dark") === "false") {
+            document.body.classList.remove("t-dark");
+        } else {
+            document.body.classList.add("t-dark");
+        }
+    }
+    if(localStorage.getItem("theme-dark") !== null){
+        themeMode();
+    }
+    if(document.body.classList.contains("t-dark")){
+        darkModeCheckbox.checked = true;
+    }
+}
+
+
+themelightDark();
