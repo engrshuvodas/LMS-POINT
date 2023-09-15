@@ -95,18 +95,18 @@ html::before {
     width: 100px;
     top: 20%;
     left: calc(50% - 650px);
-    background-image: linear-gradient(to right bottom, var(--decoration-bg-color-1), var(--white));
+    background-image: linear-gradient(to right bottom, var(--decoration-bg-color-1), var(--WHITE));
 }
 
 html::after {
     height: 150px;
     width: 150px;
     top: 20%;
-    left: calc(50% - 675px);
-    background-image: linear-gradient(to left bottom, var(--decoration-bg-color-2), var(--white));
+    right: calc(50% - 675px);
+    background-image: linear-gradient(to left bottom, var(--decoration-bg-color-2), var(--WHITE));
 }
 
-body {
+body{
     --white: hsla(0, 0%, 100%, 0.25);
     --border-color-2: hsla(0, 0%, 100%, 0.40);
     --shadow: none;
@@ -114,12 +114,28 @@ body {
     background-image: linear-gradient(to right, var(--body-gradient-bg-color-1), var(--body-gradient-bg-color-2));
     background-attachment: fixed;
     padding: 40px 0;
-    --backdrop-filter-blur: blur(5px);
+    --backdrop-filter-blur: blur(8px);
 }
+
+/* control lightness using opacity property */
+body::before{
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--WHITE);
+    opacity: 0.3;
+    z-index: -3;
+}
+
+
 
 .main-wrapper {
     max-width: 1200px;
     background-color: var(--white);
+    /* background-color: hwb(60 6% 6%); */
     border: 1px solid var(--border-color-2);
     margin: auto;
     border-radius: 20px;
@@ -137,4 +153,50 @@ body {
     backdrop-filter: var(--backdrop-filter-blur);
     z-index: -1;
     border-radius: 20px;
+} 
+
+.header .sub-menu,
+.box{
+    border: 1px solid var(--border-color-2);
 }
+.modal,
+.header .sub-menu,
+.box,
+.style-switcher{
+    -webkit-backdrop-filter: var(--backdrop-filter-blur);
+    backdrop-filter: var(--backdrop-filter-blur);
+}
+.modal-backdrop{
+    background-color: var(--white);
+}
+
+
+
+/*------------------- glass dark ------------------*/
+
+body.t-dark{
+    --border-color-2: hsla(0, 0%, 100%, 0.07);
+    --border-color-1: hsla(0, 0%, 100%, 0.15);
+    --white: hsla(0, 0%, 100%, 0.05);
+    --shadow: none;
+}
+/* control darkness useing opacity peperty */
+body.t-dark::before{
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--BLACK);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+/* 55-18 */
+
+
+
+
+
