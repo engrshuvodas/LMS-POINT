@@ -38,6 +38,41 @@ function coursePreviewVideo(){
 
 
 /*--------------------------------------------
+    header menu
+-------------------------------------------*/
+function headerMenu(){
+    const menu = document.querySelector(".js-header-menu"),
+    backdrop = document.querySelector(".js-header-backdrop"),
+    menuCollapseBreakpoint = 991;
+
+    function collapse(){
+        menu.querySelector(".active .js-sub-menu").removeAttribute("style");
+        menu.querySelector(".active").classList.remove("active");
+    }
+
+    menu.addEventListener("click", (event) => {
+        const { target } = event;
+
+        if(target.classList.contains("js-toggle-sub-menu") && 
+        window.innerWidth <= menuCollapseBreakpoint){
+            // prevent default anchor click behavior
+            event.preventDefault();
+
+            // collapse the other expanded menu-item if exists
+            if(menu.querySelector(".active")){
+                collapse();
+            }
+
+            // expand new menu-item
+            target.parentElement.classList.add("active");
+            target.nextElementSibling.style.maxHeight =
+            target.nextElementSibling.scrollHeight + "px";
+        }
+    });
+}
+headerMenu();
+
+/*--------------------------------------------
     style switcher
 -------------------------------------------*/
 
