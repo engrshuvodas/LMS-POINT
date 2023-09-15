@@ -101,7 +101,7 @@ html::before {
 html::after {
     height: 150px;
     width: 150px;
-    top: 20%;
+    top: 60%;
     right: calc(50% - 675px);
     background-image: linear-gradient(to left bottom, var(--decoration-bg-color-2), var(--WHITE));
 }
@@ -111,11 +111,16 @@ body{
     --border-color-2: hsla(0, 0%, 100%, 0.40);
     --shadow: none;
     --border-color-1: hsl(0, 0%, 0%, 0.1);
-    background-image: linear-gradient(to right, var(--body-gradient-bg-color-1), var(--body-gradient-bg-color-2));
+    background-image: linear-gradient(to right, #9e2473, #3070d6);
+    /* background-image: linear-gradient(to right, var(--body-gradient-bg-color-1), var(--body-gradient-bg-color-2)); */
+    background-color: linear-gradient;
     background-attachment: fixed;
     padding: 40px 0;
     --backdrop-filter-blur: blur(8px);
 }
+
+
+
 
 /* control lightness using opacity property */
 body::before{
@@ -135,7 +140,6 @@ body::before{
 .main-wrapper {
     max-width: 1200px;
     background-color: var(--white);
-    /* background-color: hwb(60 6% 6%); */
     border: 1px solid var(--border-color-2);
     margin: auto;
     border-radius: 20px;
