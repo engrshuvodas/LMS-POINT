@@ -486,6 +486,7 @@ textarea.form-control{
     font-size: 13px;
     margin-left: 3px;
     pointer-events: none;
+    transition: transform 0.3s ease;
 }
 .header .sub-menu{
     position: absolute;

@@ -35,7 +35,7 @@ function coursePreviewVideo(){
     }
 }
 
-
+coursePreviewVideo();
 
 /*--------------------------------------------
     header menu
@@ -57,6 +57,7 @@ function headerMenu(){
         window.innerWidth <= menuCollapseBreakpoint){
             // prevent default anchor click behavior
             event.preventDefault();
+            
 
             // collapse the other expanded menu-item if exists
             if(menu.querySelector(".active")){
