@@ -45,6 +45,14 @@ function headerMenu(){
     backdrop = document.querySelector(".js-header-backdrop"),
     menuCollapseBreakpoint = 991;
 
+    function toggleMenu(){
+        console.log("hhhhhhhhhhhhhhh")
+    }
+
+    document.querySelectorAll(".js-header-menu-toggler").forEach(item) => {
+        item.addEventListener("click", toggleMenu);
+    }
+
     function collapse(){
         menu.querySelector(".active .js-sub-menu").removeAttribute("style");
         menu.querySelector(".active").classList.remove("active");
@@ -57,7 +65,11 @@ function headerMenu(){
         window.innerWidth <= menuCollapseBreakpoint){
             // prevent default anchor click behavior
             event.preventDefault();
-            
+
+            if(target.parentElement.classList.contains("active")){
+                collapse();
+                return;
+            }
 
             // collapse the other expanded menu-item if exists
             if(menu.querySelector(".active")){

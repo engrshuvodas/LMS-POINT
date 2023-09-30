@@ -60,14 +60,19 @@
         width: 300px;
         height: 100vb;
         top: 0;
-        right: 0;
+        right: -300px;
         z-index: 1000;
         padding: 70px 0 50px;
         transition: all 0.5s ease;
         background-color: var(--white);
         box-shadow: var(--shadow);
         overflow-y: auto;
+        visibility: hidden;
     }
+    .header-menu.open{
+        right: 0;
+        visibility: visible;
+    }    
     .header .menu-item{
         display: block;
         margin: 0;
