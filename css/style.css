@@ -184,17 +184,30 @@ h3{
     padding: 8px 20px;
     transition: all 0.3s ease;
 }
+.btn-theme a{
+    background-color: var(--main-color);
+    color: var(--WHITE);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
 .btn-theme:hover{
     color: var(--WHITE);
     background-color: var(--button-hover-color);
 }
-.btn-theme:focus{
+.btn-theme:hover a{
+    color: var(--WHITE);
+    background-color: var(--button-hover-color);
+}
+.btn-theme:focus {
     box-shadow: 0 0 8px var(--main-color);
 }
 .btn-block{
     width: 100%;
 }
-.btn-form{
+.btn-form a{
     height: 48px;
 
 }
