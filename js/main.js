@@ -40,50 +40,61 @@ coursePreviewVideo();
 /*--------------------------------------------
     header menu
 -------------------------------------------*/
-function headerMenu(){
-    const menu = document.querySelector(".js-header-menu"),
-    backdrop = document.querySelector(".js-header-backdrop"),
-    menuCollapseBreakpoint = 991;
+// function headerMenu(){
+//     const menu = document.querySelector(".js-header-menu"),
+//     backdrop = document.querySelector(".js-header-backdrop"),
+//     menuCollapseBreakpoint = 991;
 
-    function toggleMenu(){
-        console.log("hhhhhhhhhhhhhhh")
-    }
+//     function toggleMenu(){
+//         console.log("hhhhhhhhhhhhhhh")
+//     }
 
-    document.querySelectorAll(".js-header-menu-toggler").forEach(item) => {
-        item.addEventListener("click", toggleMenu);
-    }
+//     document.querySelectorAll(".js-header-menu-toggler").forEach(item) => {
+//         item.addEventListener("click", toggleMenu);
+//     }
 
-    function collapse(){
-        menu.querySelector(".active .js-sub-menu").removeAttribute("style");
-        menu.querySelector(".active").classList.remove("active");
-    }
+//     function collapse(){
+//         menu.querySelector(".active .js-sub-menu").removeAttribute("style");
+//         menu.querySelector(".active").classList.remove("active");
+//     }
 
-    menu.addEventListener("click", (event) => {
-        const { target } = event;
+//     menu.addEventListener("click", (event) => {
+//         const { target } = event;
 
-        if(target.classList.contains("js-toggle-sub-menu") && 
-        window.innerWidth <= menuCollapseBreakpoint){
-            // prevent default anchor click behavior
-            event.preventDefault();
+//         if(target.classList.contains("js-toggle-sub-menu") && 
+//         window.innerWidth <= menuCollapseBreakpoint){
+//             // prevent default anchor click behavior
+//             event.preventDefault();
 
-            if(target.parentElement.classList.contains("active")){
-                collapse();
-                return;
-            }
+//             if(target.parentElement.classList.contains("active")){
+//                 collapse();
+//                 return;
+//             }
 
-            // collapse the other expanded menu-item if exists
-            if(menu.querySelector(".active")){
-                collapse();
-            }
+//             // collapse the other expanded menu-item if exists
+//             if(menu.querySelector(".active")){
+//                 collapse();
+//             }
 
-            // expand new menu-item
-            target.parentElement.classList.add("active");
-            target.nextElementSibling.style.maxHeight =
-            target.nextElementSibling.scrollHeight + "px";
-        }
-    });
-}
-headerMenu();
+//             // expand new menu-item
+//             target.parentElement.classList.add("active");
+//             target.nextElementSibling.style.maxHeight =
+//             target.nextElementSibling.scrollHeight + "px";
+//         }
+//     });
+// }
+// headerMenu();
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------
     style switcher
