@@ -10,6 +10,7 @@
     .header{
         padding: 12px 0;
     }
+    .header-close-btn,
     .header-hamburger-btn{
         display: block;
     }
@@ -43,7 +44,18 @@
     .header-hamburger-btn span::after{
         top: 7px;
     }
-
+    .header-close-btn{
+        height: 40px;
+        width: 40px;
+        background-color: var(--main-color);
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        color: var(--WHITE);
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
     .header-menu{
         position: fixed;
         width: 300px;
@@ -88,6 +100,7 @@
         padding: 12px 45px;
         border-bottom: 1px solid var(--border-color-1);
     }
+    
 }
 
 @media(max-width: 767px){
