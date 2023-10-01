@@ -1,3 +1,8 @@
+/* 00:13:24 */
+/* now, js */
+
+
+
 @media(max-width: 1199px){
     .container{
         max-width: 100%;
@@ -10,6 +15,7 @@
     .header{
         padding: 12px 0;
     }
+    .header-backdrop,
     .header-close-btn,
     .header-hamburger-btn{
         display: block;
@@ -100,7 +106,18 @@
         padding: 12px 45px;
         border-bottom: 1px solid var(--border-color-1);
     }
-    
+    .header-backdrop{
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        visibility: hidden;
+        background-color: var(--white);
+    }
 }
 
 @media(max-width: 767px){
