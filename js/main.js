@@ -99,6 +99,21 @@ coursePreviewVideo();
 
 
 
+//
+
+
+
+
+
+//
+
+
+
+
+
+
+
+
 
 
 
@@ -109,7 +124,8 @@ function headerMenu() {
     const menuCollapseBreakpoint = 991;
 
     function toggleMenu(){
-        console.log("hhhhhhh")
+        menu.classList.toggle("open");
+        document.body.classList.toggle("overflow-hidden");
     }
 
     document.querySelectorAll(".js-header-menu-toggler").forEach((item) => {
