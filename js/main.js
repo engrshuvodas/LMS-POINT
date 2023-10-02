@@ -1,6 +1,3 @@
-
-
-
 /*------------------------------------------------------
     testimonial slider
 --------------------------------------------------------*/
@@ -110,6 +107,15 @@ function headerMenu() {
     const menu = document.querySelector(".menu");
     const backdrop = document.querySelector(".js-header-backdrop");
     const menuCollapseBreakpoint = 991;
+
+    function toggleMenu(){
+        console.log("hhhhhhh")
+    }
+
+    document.querySelectorAll(".js-header-menu-toggler").forEach((item) => {
+        item.addEventListener("click", toggleMenu);
+
+    });
   
     function collapse() {
       const activeSubMenu = menu.querySelector(".active .js-sub-menu");
@@ -130,6 +136,11 @@ function headerMenu() {
         window.innerWidth <= menuCollapseBreakpoint
       ) {
         event.preventDefault();
+
+        if(target.parentElement.classList.contains("active")){
+            collapse();
+            return;
+        }
   
         if (menu.querySelector(".active")) {
           collapse();
