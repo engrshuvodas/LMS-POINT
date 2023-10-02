@@ -88,11 +88,67 @@ coursePreviewVideo();
 
 
 
+/*--------------------------------------------
+    header menu
+-------------------------------------------*/
+// function headerMenu(){
+//     const menu = document.querySelector(".js-header-menu"),
+//     backdrop = document.querySelector(".js-header-backdrop"),
+//     menuCollapseBreakpoint = 991;
+
+//     menu.addEventListener("click", (event) => {
+//         const { target } = event;
+//         console.log(target);
+//     });
+// }
+// headerMenu();
 
 
 
+function headerMenu() {
+    const menu = document.querySelector(".js-header-menu");
+    const backdrop = document.querySelector(".js-header-backdrop");
+    const menuCollapseBreakpoint = 991;
+
+    if (menu && backdrop) {
+        menu.addEventListener("click", (event) => {
+            const { target } = event;
+            console.log(target);
+        });
+    } else {
+        console.error("Menu or backdrop element not found.");
+    }
+}
+
+headerMenu();
 
 
+
+// function headerMenu() {
+//     // Find the menu and backdrop elements
+//     const menu = document.querySelector(".js-header-menu");
+//     const backdrop = document.querySelector(".js-header-backdrop");
+//     const menuCollapseBreakpoint = 991;
+
+//     // Function to handle the menu click event
+//     function handleMenuClick(event) {
+//         const { target } = event;
+//         console.log(target);
+//         // Add your logic here to handle the menu click event
+//     }
+
+//     // Add a click event listener to the menu if it exists
+//     if (menu) {
+//         menu.addEventListener("click", handleMenuClick);
+//     } else {
+//         console.error("Menu element not found.");
+//     }
+
+//     // You can also add other event listeners and logic here if needed
+// }
+
+// // Call the headerMenu function to initialize it
+// headerMenu();
 
 
 
