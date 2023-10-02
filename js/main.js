@@ -40,117 +40,112 @@ coursePreviewVideo();
 /*--------------------------------------------
     header menu
 -------------------------------------------*/
-// function headerMenu(){
-//     const menu = document.querySelector(".js-header-menu"),
-//     backdrop = document.querySelector(".js-header-backdrop"),
-//     menuCollapseBreakpoint = 991;
 
-//     function toggleMenu(){
-//         console.log("hhhhhhhhhhhhhhh")
+
+// ********** chtgpt running code *********
+
+// function headerMenu() {
+//     const menu = document.querySelector(".menu"); // Change the selector to match your HTML structure
+//     const menuCollapseBreakpoint = 991;
+  
+//     function collapse() {
+//       const activeSubMenu = menu.querySelector(".active .js-sub-menu");
+//       if (activeSubMenu) {
+//         activeSubMenu.removeAttribute("style");
+//       }
+//       const activeItem = menu.querySelector(".active");
+//       if (activeItem) {
+//         activeItem.classList.remove("active");
+//       }
 //     }
-
-//     document.querySelectorAll(".js-header-menu-toggler").forEach(item) => {
-//         item.addEventListener("click", toggleMenu);
-//     }
-
-//     function collapse(){
-//         menu.querySelector(".active .js-sub-menu").removeAttribute("style");
-//         menu.querySelector(".active").classList.remove("active");
-//     }
-
+  
 //     menu.addEventListener("click", (event) => {
-//         const { target } = event;
-
-//         if(target.classList.contains("js-toggle-sub-menu") && 
-//         window.innerWidth <= menuCollapseBreakpoint){
-//             // prevent default anchor click behavior
-//             event.preventDefault();
-
-//             if(target.parentElement.classList.contains("active")){
-//                 collapse();
-//                 return;
-//             }
-
-//             // collapse the other expanded menu-item if exists
-//             if(menu.querySelector(".active")){
-//                 collapse();
-//             }
-
-//             // expand new menu-item
-//             target.parentElement.classList.add("active");
-//             target.nextElementSibling.style.maxHeight =
-//             target.nextElementSibling.scrollHeight + "px";
+//       const { target } = event;
+  
+//       if (
+//         target.classList.contains("js-toggle-sub-menu") &&
+//         window.innerWidth <= menuCollapseBreakpoint
+//       ) {
+//         event.preventDefault();
+  
+//         if (menu.querySelector(".active")) {
+//           collapse();
 //         }
+  
+//         target.classList.add("active");
+//         const subMenu = target.nextElementSibling;
+//         if (subMenu) {
+//           subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+//         }
+//       }
+  
+//       // Open sub-menu on sub-menu-item click
+//       if (target.classList.contains("sub-menu-item")) {
+//         const subMenu = target.closest(".js-sub-menu");
+//         if (subMenu) {
+//           subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+//           const parentItem = subMenu.previousElementSibling;
+//           if (parentItem) {
+//             parentItem.classList.add("active");
+//           }
+//         }
+//       }
 //     });
-// }
-// headerMenu();
+//   }
+  
+//   headerMenu();
+  
 
 
 
 
-/*--------------------------------------------
-    header menu
--------------------------------------------*/
-// function headerMenu(){
-//     const menu = document.querySelector(".js-header-menu"),
-//     backdrop = document.querySelector(".js-header-backdrop"),
-//     menuCollapseBreakpoint = 991;
 
-//     menu.addEventListener("click", (event) => {
-//         const { target } = event;
-//         console.log(target);
-//     });
-// }
-// headerMenu();
+
+
+
 
 
 
 function headerMenu() {
-    const menu = document.querySelector(".js-header-menu");
+    const menu = document.querySelector(".menu");
     const backdrop = document.querySelector(".js-header-backdrop");
     const menuCollapseBreakpoint = 991;
-
-    if (menu && backdrop) {
-        menu.addEventListener("click", (event) => {
-            const { target } = event;
-            console.log(target);
-        });
-    } else {
-        console.error("Menu or backdrop element not found.");
+  
+    function collapse() {
+      const activeSubMenu = menu.querySelector(".active .js-sub-menu");
+      if (activeSubMenu) {
+        activeSubMenu.removeAttribute("style");
+      }
+      const activeItem = menu.querySelector(".active");
+      if (activeItem) {
+        activeItem.classList.remove("active");
+      }
     }
-}
-
-headerMenu();
-
-
-
-// function headerMenu() {
-//     // Find the menu and backdrop elements
-//     const menu = document.querySelector(".js-header-menu");
-//     const backdrop = document.querySelector(".js-header-backdrop");
-//     const menuCollapseBreakpoint = 991;
-
-//     // Function to handle the menu click event
-//     function handleMenuClick(event) {
-//         const { target } = event;
-//         console.log(target);
-//         // Add your logic here to handle the menu click event
-//     }
-
-//     // Add a click event listener to the menu if it exists
-//     if (menu) {
-//         menu.addEventListener("click", handleMenuClick);
-//     } else {
-//         console.error("Menu element not found.");
-//     }
-
-//     // You can also add other event listeners and logic here if needed
-// }
-
-// // Call the headerMenu function to initialize it
-// headerMenu();
-
-
+  
+    menu.addEventListener("click", (event) => {
+      const { target } = event;
+  
+      if (
+        target.classList.contains("js-toggle-sub-menu") &&
+        window.innerWidth <= menuCollapseBreakpoint
+      ) {
+        event.preventDefault();
+  
+        if (menu.querySelector(".active")) {
+          collapse();
+        }
+  
+        target.classList.add("active");
+        const subMenu = target.nextElementSibling;
+        if (subMenu) {
+          subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+        }
+      }
+    });
+  }
+  
+  headerMenu();
+  
 
 /*--------------------------------------------
     style switcher
