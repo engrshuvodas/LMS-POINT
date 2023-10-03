@@ -125,6 +125,28 @@
         visibility: visible;
         opacity: 0.8;
     }
+    .circular-img{
+        max-width: 280px;
+    }
+    .circular-img img{
+        max-width: 240px;
+    }
+    .circular-img-circle{
+        height: 280px;
+        width: 280px;
+    }
+    .banner-text h1{
+        font-size: 35px;
+    }
+    .section-title .sub-title{
+        font-size: 30px;
+    }
+    .course-sidebar{
+        margin-top: 30px;
+    }
+    .course-instructor .img-box img{
+        width: 100px;
+    }
 }
 
 @media(max-width: 767px){
@@ -137,5 +159,5 @@
 
 
 
-/* 00:24:07 */
+/* 00:34:30 */
 /* now, js */

@@ -93,12 +93,6 @@ coursePreviewVideo();
 //   headerMenu();
   
 
-
-
-
-
-
-
 //
 
 function headerMenu() {
@@ -158,8 +152,19 @@ function headerMenu() {
         }
       }
     });
-  }
   
+
+  //when resizing window
+  window.addEventListener("resize", function(){
+    if(this.innerWidth > menuCollapseBreakpoint && menu.classList.contains("open")){
+        toggleMenu();
+    }
+    if(this.innerWidth > menuCollapseBreakpoint && menu.querySelector(".active")){
+        collapse();
+    }
+    
+  });
+}
   headerMenu();
   
 
