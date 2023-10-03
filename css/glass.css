@@ -163,6 +163,7 @@ body::before{
 .box{
     border: 1px solid var(--border-color-2);
 }
+.header-backdrop,
 .modal,
 .header .sub-menu,
 .box,
@@ -172,6 +173,9 @@ body::before{
 }
 .modal-backdrop{
     background-color: var(--white);
+}
+.header-backdrop.active{
+    opacity: 1;
 }
 
 

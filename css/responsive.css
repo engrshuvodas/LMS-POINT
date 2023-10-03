@@ -121,6 +121,10 @@
         visibility: hidden;
         background-color: var(--white);
     }
+    .header-backdrop.active{
+        visibility: visible;
+        opacity: 0.8;
+    }
 }
 
 @media(max-width: 767px){

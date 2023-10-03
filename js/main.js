@@ -101,38 +101,27 @@ coursePreviewVideo();
 
 //
 
-
-
-
-
-//
-
-
-
-
-
-
-
-
-
-
-
-
 function headerMenu() {
-    const menu = document.querySelector(".menu");
+    const menu = document.querySelector(".header-menu");
     const backdrop = document.querySelector(".js-header-backdrop");
     const menuCollapseBreakpoint = 991;
-
-    function toggleMenu(){
-        menu.classList.toggle("open");
-        document.body.classList.toggle("overflow-hidden");
+  
+    function toggleMenu() {
+      menu.classList.toggle("open");
+      backdrop.classList.toggle("active"); // Toggle backdrop visibility
+      document.body.classList.toggle("overflow-hidden");
     }
+  
 
-    document.querySelectorAll(".js-header-menu-toggler").forEach((item) => {
-        item.addEventListener("click", toggleMenu);
-
+    document.querySelectorAll(".js-header-manu-toggler").forEach((item) => {
+      item.addEventListener("click", toggleMenu);
     });
   
+    //close the menu by clicking outside off it
+    backdrop.addEventListener("click", toggleMenu);
+
+
+
     function collapse() {
       const activeSubMenu = menu.querySelector(".active .js-sub-menu");
       if (activeSubMenu) {
@@ -152,10 +141,10 @@ function headerMenu() {
         window.innerWidth <= menuCollapseBreakpoint
       ) {
         event.preventDefault();
-
-        if(target.parentElement.classList.contains("active")){
-            collapse();
-            return;
+  
+        if (target.parentElement.classList.contains("active")) {
+          collapse();
+          return;
         }
   
         if (menu.querySelector(".active")) {
@@ -173,6 +162,73 @@ function headerMenu() {
   
   headerMenu();
   
+
+
+//
+
+
+
+
+
+// function headerMenu() {
+//     const menu = document.querySelector(".menu");
+//     const backdrop = document.querySelector(".js-header-backdrop");
+//     const menuCollapseBreakpoint = 991;
+
+//     function toggleMenu(){
+//         menu.classList.toggle("open");
+//         document.body.classList.toggle("overflow-hidden");
+//     }
+
+//     document.querySelectorAll(".js-header-menu-toggler").forEach((item) => {
+//         item.addEventListener("click", toggleMenu);
+
+//     });
+  
+//     function collapse() {
+//       const activeSubMenu = menu.querySelector(".active .js-sub-menu");
+//       if (activeSubMenu) {
+//         activeSubMenu.removeAttribute("style");
+//       }
+//       const activeItem = menu.querySelector(".active");
+//       if (activeItem) {
+//         activeItem.classList.remove("active");
+//       }
+//     }
+  
+//     menu.addEventListener("click", (event) => {
+//       const { target } = event;
+  
+//       if (
+//         target.classList.contains("js-toggle-sub-menu") &&
+//         window.innerWidth <= menuCollapseBreakpoint
+//       ) {
+//         event.preventDefault();
+
+//         if(target.parentElement.classList.contains("active")){
+//             collapse();
+//             return;
+//         }
+  
+//         if (menu.querySelector(".active")) {
+//           collapse();
+//         }
+  
+//         target.classList.add("active");
+//         const subMenu = target.nextElementSibling;
+//         if (subMenu) {
+//           subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+//         }
+//       }
+//     });
+//   }
+  
+//   headerMenu();
+  
+
+
+
+
 
 /*--------------------------------------------
     style switcher
