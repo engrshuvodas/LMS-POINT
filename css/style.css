@@ -887,6 +887,9 @@ textarea.form-control{
     position: relative;
     padding: 0 50px 0 20px;
 }
+.course-curriculum ul li:not(:last-child){
+    margin-bottom: 10px;
+}
 .course-curriculum ul li span{
     position: absolute;
     font-size: 14px;

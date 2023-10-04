@@ -167,16 +167,60 @@
     .banner-text h2{
         font-size: 18px;
     }
-    .section .sub-title{
+    .form-title,
+    .section-title .sub-title{
         font-size: 22px;
+    }
+    .course-header h2{
+        font-size: 24px;
+    }
+    .course-curriculum .accordion-button span{
+        position: relative;
+        right: auto;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    .course-curriculum .accordion-button{
+        padding-right: 15px;
+    }
+    .course-curriculum ul li span{
+        font-size: 12px;
+        position: relative;
+        display: block;
+        margin-top: 5px;
+    }
+    .course-curriculum ul li{
+        padding: 0 0 0 20px;
+    }
+    .rating-box{
+        margin-bottom: 15px;
     }
 }
 
 @media(max-width: 575px){
-
+    .circular-img{
+        max-width: 230px;
+    }
+    .circular-img img{
+        max-width: 200px;
+    }
+    .circular-img-circle{
+        width: 230px;
+        height: 230px;
+    }
+    .footer-item{
+        text-align: center;
+    }
+    .header-logo a{
+        font-size: 22px;
+    }
+    .modal-dialog{
+        margin: 8px 15px;
+    }
 }
 
 
 
-/* 00:38:20 */
+/* 00:46:51 */
 /* now, js */
