@@ -150,7 +150,19 @@ h3{
     100%{
         transform: rotate(360deg);
     }
-
+}
+@keyframes bubble{
+    0%{
+        transform: translate(0vh);
+        opacity: 0;
+    }
+    5%,95%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
 }
 
 /*.................................
@@ -364,7 +376,68 @@ textarea.form-control{
 /* .................................
 17. =bubble animation 
 .................................*/
-
+.bubble-animation-item{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    z-index: -1;
+}
+.bubble-animation-item:nth-child(1){
+    border-color: var(--yellow-light);
+    top: 120%;
+    left: 10%;
+    animation: bubble 30s linear infinite;
+}
+.bubble-animation-item:nth-child(2){
+    border-color: var(--green-light);
+    top: 60%;
+    left: 50%;
+    animation: bubble 40s linear infinite;
+}
+.bubble-animation-item:nth-child(3){
+    border-color: var(--red-light);
+    top: 90%;
+    left: 90%;
+    animation: bubble 50s linear infinite;
+}
+.bubble-animation-item:nth-child(4){
+    border-color: var(--yellow-light);
+    top: 80%;
+    left: 60%;
+    animation: bubble 60s linear infinite;
+}
+.bubble-animation-item:nth-child(5){
+    border-color: var(--green-light);
+    top: 30%;
+    left: 10%;
+    animation: bubble 70s linear infinite;
+}
+.bubble-animation-item:nth-child(6){
+    border-color: var(--red-light);
+    top: 20%;
+    left: 30%;
+    animation: bubble 80s linear infinite;
+}
+.bubble-animation-item:nth-child(7){
+    border-color: var(--yellow-light);
+    top: 100%;
+    left: 5%;
+    animation: bubble 90s linear infinite;
+}
+.bubble-animation-item:nth-child(8){
+    border-color: var(--green-light);
+    top: 110%;
+    left: 33%;
+    animation: bubble 100s linear infinite;
+}
+.bubble-animation-item:nth-child(9){
+    border-color: var(--red-light);
+    top: 120%;
+    left: 65%;
+    animation: bubble 110s linear infinite;
+}
 
 /* .................................
 18. =style switcher 

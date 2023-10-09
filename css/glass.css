@@ -234,6 +234,12 @@ body.t-dark::before{
     body{
         padding: 35px 15px;
     }
+    html::before{
+        left: -50px;
+    }
+    html::after{
+        right: -75px;
+    }
 }
 
 
