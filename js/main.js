@@ -1,5 +1,17 @@
-/*------------------------------------------------------
-    testimonial slider
+window.addEventListener("load", () => {
+/*----------------------------------------------------- 
+page loader
+--------------------------------------------------------*/
+
+    document.querySelector(".js-page-loader").classList.add("fade-out");
+setTimeout(() =>{
+    document.querySelector(".js-page-loader").style.display = "none";
+}, 600);
+});
+
+
+/*----------------------------------------------------- 
+testimonial slider
 --------------------------------------------------------*/
 function testimonialSlider(){
     const carouselOne = document.getElementById('carouselOne');
@@ -238,7 +250,6 @@ function headerMenu() {
 /*--------------------------------------------
     style switcher
 -------------------------------------------*/
-
 const styleSwitcher = document.querySelector(".js-style-switcher"),
 styleSwitcherToggler = document.querySelector(".js-style-switcher-toggler");
 
