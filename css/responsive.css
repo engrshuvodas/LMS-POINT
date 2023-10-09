@@ -147,6 +147,9 @@
     .course-instructor .img-box img{
         width: 100px;
     }
+    .course-instructor .details-wrap{
+        margin-bottom: 15px;
+    }
 }
 
 @media(max-width: 767px){
@@ -195,6 +198,9 @@
     }
     .rating-box{
         margin-bottom: 15px;
+    }
+    .rating-summary{
+         margin-bottom: 15px;
     }
 }
 

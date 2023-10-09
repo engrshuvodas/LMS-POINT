@@ -201,8 +201,43 @@ body.t-dark::before{
     z-index: -1;
 }
 
+/* responsive */
 
-/* 55-18 */
+@media(max-width: 1199px){
+    body{
+        padding: 40px 30px;
+    }
+    html::before{
+        left: -35px;
+        top: 10%;
+    }
+    html::after{
+        right: -60px;
+        bottom: 10%;
+    }
+}
+
+
+@media(max-width: 991px){
+    .header-menu{
+        -webkit-backdrop-filter: var(--backdrop-filter-blur);
+        backdrop-filter: var(--backdrop-filter-blur);
+    }
+    .header .sub-menu{
+        border: 0;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+}
+
+@media(max-width: 767px){
+    body{
+        padding: 35px 15px;
+    }
+}
+
+
+
 
 
 

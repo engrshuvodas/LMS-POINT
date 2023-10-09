@@ -948,7 +948,7 @@ textarea.form-control{
 }
 .rating-summary .progress{
     height: 8px;
-    background-color: var(--border-color-2);
+    background-color: var(--border-color-1);
     width: calc(100% - 120px);
     margin-right: 20px;
     border-radius: 0;
