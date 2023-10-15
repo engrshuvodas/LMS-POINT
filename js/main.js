@@ -1,3 +1,8 @@
+const activeT = document.querySelector(".js-toggle-sub-menu .active");
+console.log("ll", activeT)
+const activeS = document.querySelector(".js-sub-menu");
+console.log("lsssl", activeS)
+
 window.addEventListener("load", () => {
 /*----------------------------------------------------- 
 page loader
@@ -114,6 +119,7 @@ function headerMenu() {
   
     function toggleMenu() {
       menu.classList.toggle("open");
+      console.log("open")
       backdrop.classList.toggle("active"); // Toggle backdrop visibility
       document.body.classList.toggle("overflow-hidden");
     }
@@ -129,13 +135,19 @@ function headerMenu() {
 
 
     function collapse() {
-      const activeSubMenu = menu.querySelector(".active .js-sub-menu");
-      if (activeSubMenu) {
+      const activeSubMenu = menu.querySelector(".js-sub-menu");
+      const activeTSM = menu.querySelector(".js-toggle-sub-menu.active");
+    //   activeSubMenu.removeAttribute("style");
+      
+     
+      if (activeTSM) {
         activeSubMenu.removeAttribute("style");
+        // activeSubMenu.style.maxHeight = 0;
       }
+
       const activeItem = menu.querySelector(".active");
       if (activeItem) {
-        activeItem.classList.remove("active");
+        activeItem.classList.toggle("active");
       }
     }
   
@@ -177,7 +189,8 @@ function headerMenu() {
     
   });
 }
-  headerMenu();
+
+headerMenu();
   
 
 
