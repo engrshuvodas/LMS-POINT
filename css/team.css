@@ -1,0 +1,164 @@
+body{
+	margin: 0 auto;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+  }
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid black;
+  width: 100%;
+  height: 80px;
+}
+
+ul li{
+	border: 2px solid black;
+	width: 25%;
+}
+nav{
+	position: fixed;
+  width: 100%;
+  background-color: black;
+  height: 60px;
+  border-bottom: 2px solid black;
+  margin-top: 130px;
+}
+nav a{
+	color: white;
+	padding: 10px 30px;
+ 	float: right;
+	text-decoration:none;
+	font-size: 25px;
+	font-weight: bold;
+	transition all: 0.2s;
+}
+nav a:hover{
+	border-bottom: 10px solid white;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 5px;
+	font-size: 26px;
+	color: green;
+}
+.main{
+	width: 100%;
+	height: 130px;
+	background-color: grey;
+	position: fixed;
+}
+.main h1{
+	text-align: center;
+	margin-top: 30px;
+	width: 20%;
+	font-size: 40px;
+/* 	text-decoration:underline; */
+	text-decoration-color:#ff004d; 
+}
+
+/*Card CSS*/
+.column .card img{
+	width:80%;
+	height:35%;
+	padding-top:10px;
+	border-radius: 500px;
+	margin-top: -100px;
+}
+.column .card img:hover{
+	width:85%;
+	height:40%;
+}
+ .column
+  {
+    width:25%;
+    float:left;
+		padding:100px 10px;
+    margin-top: 220px;
+   }
+ .row{
+  	width: 100%;
+  	align-items: center;
+  	}
+
+  .row:after{
+      content:"";
+      display:table;
+      clear:both;
+  }
+
+ 
+
+  @media screen and (max-width:600px)
+  {
+      .column
+      {
+          width:100%;
+          display:block;
+          margin-bottom: 20px;
+      }
+  }
+
+  .card
+  {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      max-width:300px;
+      margin:auto;
+      background-color:white;
+      text-align:center;
+      border-radius:40px;
+      padding-bottom:15px;
+  }
+
+  .card:hover
+  {
+      box-shadow: 0 6px 10px 0 rgba(0,0,0,0.4);
+      max-width:320px;
+      margin:auto;
+      background-color:white;
+      text-align:center;
+      border-radius:40px;
+      padding-bottom:15px;
+  }
+
+  .title
+  {
+      color:gray;
+      font-size:18px;
+  }
+
+  p{
+  	color: #ff004d;
+  	font-weight: bold;
+  }
+
+  button
+  {
+      border:none;
+      padding:8px;
+      display: inline-block;
+      color:white;
+      background-color:black;
+      cursor:pointer;
+      width:70%;
+      border-radius:20px;
+      font-size:18px;
+      text-align:center;
+  }
+
+  .card a{
+      text-decoration: none;
+      font-size:18px;
+      color:black;
+  }
+
+  
+  i:hover{
+  	color: #ff004d;
+  }
