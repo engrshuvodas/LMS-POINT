@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6{
 	height:50%;
 }
  .columnt{
-    width:25%;
+    width: 25%;
     float:left;
     padding:100px 10px;
     margin-top: 20px;
@@ -76,12 +76,18 @@ h1,h2,h3,h4,h5,h6{
   .cardt a{
       text-decoration: none;
       font-size: 25px;
-      color:rgb(255, 247, 247);
+      color:var(--main-color);
   }
 
-  .cardt h1{
+  .cardt h2{
     font-size: 45px;
     font-weight: 700;
+
+}
+
+.cardt h3{
+    font-size: 20px;
+    color: var(--main-color);
 
 }
 
