@@ -23,3 +23,16 @@ User Authentication: Security is a priority, so we've implemented user authentic
 Whether you're an educator looking to create an online course or a learner eager to acquire new skills, our "Responsive LMS Website using HTML, CSS, JavaScript, and Bootstrap 5" offers an innovative and feature-rich solution. Feel free to explore the codebase, contribute, or customize it to suit your specific needs. Let's learn and grow together in the digital age!
 
 Get started today by cloning the repository and diving into the world of modern online education powered by the latest web technologies. Happy learning and coding!
+
+
+| Platform | Link |
+| :--- | :--- |
+| **WhatsApp** | [Chat Now](https://wa.me/+8801765245872) |
+| **LinkedIn** | [Profile](https://www.linkedin.com/in/engrshuvoda/) |
+| **YouTube** | [Channel](https://www.youtube.com/channel/UCEJ0R871tF2PLT27q9azYWg) |
+| **GitHub** | [Repositories](https://github.com/engrshuvodas) |
+| **Fiverr** | [Hire Me](https://www.fiverr.com/shuvo_das74886) |
+| **Portfolio** | [About Me](https://engrshuvodas.github.io/me/) |
+| **Email** | [engrshuvoda@gmail.com](mailto:engrshuvoda@gmail.com) |
+| **X (Twitter)** | [@engrshuvodas](https://x.com/engrshuvodas) |
+| **Facebook** | [Engr Shuvo](https://www.facebook.com/engr.shuvo74886/) |
