@@ -104,7 +104,6 @@ LMS-POINT/
 
 ## 👨‍💻 Developer Information
 
-**Connect with me:**
 
 | Platform | Link |
 | :--- | :--- |
